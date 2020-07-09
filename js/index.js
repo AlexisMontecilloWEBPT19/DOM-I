@@ -40,3 +40,22 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// Adding info into the header Nav
+const headerNav = document.querySelectorAll('header nav a')
+
+headerNav[0].textContent = siteContent.nav["nav-item-1"];
+headerNav[1].textContent = siteContent.nav["nav-item-2"];
+headerNav[2].textContent = siteContent.nav["nav-item-3"];
+headerNav[3].textContent = siteContent.nav["nav-item-4"];
+headerNav[4].textContent = siteContent.nav["nav-item-5"];
+headerNav[5].textContent = siteContent.nav["nav-item-6"];
+
+// Working on Section class 'cta'
+const ctaH1 = document.querySelector('.cta-text h1');
+ctaH1.textContent = siteContent.cta['h1'];
+
+const ctaBtn = document.querySelector('.cta-text button');
+ctaBtn.textContent = siteContent.cta['button'];
+
